@@ -1,8 +1,6 @@
 const mobilenet = require('@tensorflow-models/mobilenet');
 const toxicityModel = require('@tensorflow-models/toxicity');
 
-
-
 async function mobilenet_classify(inputs){
 
     // input format can see in test_model_loading.js 
@@ -65,7 +63,7 @@ async function toxicity(inputs){
 
 }
 
-export {
+module.exports = {
     mobilenet_classify,
     toxicity
 }
