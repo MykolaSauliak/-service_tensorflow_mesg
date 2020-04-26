@@ -3,6 +3,7 @@
 Use pretrained tensorflow models for image classifying and text analysis
 
 !Warning: It takes some times to download needed pretrained packages and models
+To test only models without service use  test_model_loading.js 
 
 ## Contents
 

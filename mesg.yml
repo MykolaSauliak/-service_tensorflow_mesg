@@ -31,7 +31,9 @@ tasks:
         type: Object
   mobilenet_classify:
     inputs:
-      data:
+      url:
+        type: String
+      numChannel:
         type: String
     outputs:
       succesfull:
