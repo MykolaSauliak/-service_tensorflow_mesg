@@ -7,12 +7,14 @@ async function mobilenet_classify(inputs){
     if(!inputs.image){
         throw new Error('invalid inputs')
     }
+
+    const tensor = await convertURLtoTensor(inputs.url, inputs.numChannels)
     const model = await mobilenet.load();
-    const predictions = await model.classify(inputs.image);
+    const predictions = await model.classify(tensor);
     
     return {
       succesfull: true,
-      result : predictions
+      result : JSON.stringify(predictions)
     }
 
 }

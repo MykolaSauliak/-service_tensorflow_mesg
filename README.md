@@ -2,6 +2,8 @@
 
 Use pretrained tensorflow models for image classifying and text analysis
 
+!Warning: It takes some times to download needed pretrained packages and models
+
 ## Contents
 
 - [Installation](#Installation)

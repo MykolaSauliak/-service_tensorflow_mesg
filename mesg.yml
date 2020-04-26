@@ -32,12 +32,12 @@ tasks:
   mobilenet_classify:
     inputs:
       data:
-        type: Object
+        type: String
     outputs:
       succesfull:
         type: Boolean
       result:
-        type: Object
+        type: String
 events:
   started:
     data:
