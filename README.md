@@ -1,4 +1,4 @@
-# myservice (ID: myservice)
+# tensorflow (ID: com.kaulias.tensorflow)
 
 Use pretrained tensorflow models for image classifying and text analysis
 

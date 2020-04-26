@@ -17,7 +17,7 @@ tasks:
       succesfull:
         type: Boolean
       result:
-        type: Object
+        type: String
   predict:
     inputs:
       model:
