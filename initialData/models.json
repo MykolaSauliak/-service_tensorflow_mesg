@@ -1,0 +1,6 @@
+{
+    "image_classifier" : {
+        "url" : "https://storage.googleapis.com/tfjs-models/savedmodel/mobilenet_v2_1.0_224/model.json",
+        "fromTFHub":  false
+    }
+}

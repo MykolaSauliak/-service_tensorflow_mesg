@@ -1,0 +1,45 @@
+name: tensorflow
+sid: com.kaulias.tensorflow
+description: "Use tensorflow models withing MESG network"
+tasks:
+  greeting:
+    inputs:
+      name: 
+        type: String
+    outputs:
+      greeting:
+        type: String
+  toxicity:
+    inputs:
+      sentences:
+        type: String
+    outputs:
+      succesfull:
+        type: Boolean
+      result:
+        type: Object
+  predict:
+    inputs:
+      model:
+        type: String
+      data:
+        type: Object
+    outputs:
+      succesfull:
+        type: Boolean
+      result:
+        type: Object
+  mobilenet_classify:
+    inputs:
+      data:
+        type: Object
+    outputs:
+      succesfull:
+        type: Boolean
+      result:
+        type: Object
+events:
+  started:
+    data:
+      x:
+        type: Boolean
