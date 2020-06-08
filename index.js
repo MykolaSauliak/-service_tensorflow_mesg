@@ -1,10 +1,10 @@
-const Service = require('@mesg/service')
+const Service = require('@liteflow/service')
 const pretrainedModels = require('./tasks/pretrainedModels')
-const mesg = new Service()
+const liteflow = new Service()
 
 async function main(){
 
-  mesg.listenTask({
+  liteflow.listenTask({
     greeting: () => ({greeting: `Hello, ${inputs.name}`}),
     predict: require('./tasks/predict'),
     mobilenet_classify : pretrainedModels.mobilenet_classify,
@@ -12,7 +12,7 @@ async function main(){
   })
   .on('error', (error) => console.error(error))
   
-  mesg.emitEvent('started', { x: true })
+  liteflow.emitEvent('started', { x: true })
     .catch((error) => console.error(error))
 }
 
